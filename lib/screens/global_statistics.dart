@@ -34,13 +34,14 @@ class GlobalStatistics extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 6),
           child: Text(
-            "Statistics updated " + DateFormat('dd-MM-yyyy').format(summary.date) +", " +  timeago.format(summary.date),
+            "Statistics updated " + DateFormat('dd-MM-yyyy').format(summary.date),
 
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 14,
             ),
+            textAlign: TextAlign.center,
           ),
         ),
 

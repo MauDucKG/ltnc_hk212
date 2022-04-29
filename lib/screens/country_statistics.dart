@@ -34,12 +34,14 @@ class CountryStatistics extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 6),
           child: Text(
-            "Statistics updated " + DateFormat('dd-MM-yyyy').format(summaryList.date) +", " +  timeago.format(summaryList.date),
+            "Statistics updated " + DateFormat('dd-MM-yyyy').format(summaryList.date),
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 14,
+              
             ),
+            textAlign: TextAlign.center,
           ),
         ),
 

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 
 import '../screens/Vietnam_statistics.dart';
-import '../screens/country_loading.dart';
+import '../screens/vietnam_loading.dart';
 
 import '../services/covid_service.dart';
 
@@ -58,10 +58,9 @@ class _VietnamState extends State<Vietnam> {
           );
         switch (snapshot.connectionState) {
           case ConnectionState.waiting:
-            return const CircularProgressIndicator();
-          // VietnamLoading(
-          //     // inputTextLoading: true
-          //     );
+            return VietnamLoading(
+              inputTextLoading: true
+              );
           default:
             return !snapshot.hasData
                 ? Center(
@@ -142,7 +141,9 @@ class _VietnamState extends State<Vietnam> {
                             );
                           switch (snapshot.connectionState) {
                             case ConnectionState.waiting:
-                              return const CircularProgressIndicator();
+                              return VietnamLoading(
+                                      inputTextLoading: false
+                                      );
                             default:
                               return !snapshot.hasData
                                   ? Center(

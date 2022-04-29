@@ -53,7 +53,7 @@ class _CountryState extends State<Country> {
           );
         switch (snapshot.connectionState) {
           case ConnectionState.waiting:
-            return const CircularProgressIndicator();
+            return CountryLoading(inputTextLoading: true);
           default:
             return !snapshot.hasData
                 ? Center(
@@ -134,7 +134,7 @@ class _CountryState extends State<Country> {
                             );
                           switch (snapshot.connectionState) {
                             case ConnectionState.waiting:
-                              return Center(child: Text('load'),);
+                              return CountryLoading(inputTextLoading: false);
                             default:
                               return !snapshot.hasData
                                   ? Center(

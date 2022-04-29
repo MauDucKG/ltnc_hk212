@@ -4,6 +4,4 @@ class VietnamModel{
   final String iso2;
 
   VietnamModel(this.Vietnam, this.slug, this.iso2);
-
-  
 }

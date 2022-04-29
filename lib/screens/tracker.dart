@@ -30,7 +30,7 @@ class _TrackerState extends State<Tracker> {
         backgroundColor: kPrimaryColor,
         elevation: 0,
         title: Text(
-          "Covid-19 Tracker Live Data"
+          "Cập nhật tình hình Covid-19"
         ),
         centerTitle: true,
       ),

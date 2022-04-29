@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:shimmer/shimmer.dart';
 
-class CountryLoading extends StatelessWidget {
+class VietnamLoading extends StatelessWidget {
 
   final bool inputTextLoading;
 
-  CountryLoading({required this.inputTextLoading});
+  VietnamLoading({required this.inputTextLoading});
 
   @override
   Widget build(BuildContext context) {

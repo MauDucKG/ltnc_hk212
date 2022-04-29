@@ -85,13 +85,14 @@ class CovidService {
     // }
 
     for (final result in results) {
-       String a = result.querySelector('th')!.text.trim();
+      String ten = result.querySelector('th')!.text.trim();
+       final a = result.querySelectorAll('td');
       //  print(slug.length); 
        
-      if(a == slug) {
-      int tong = sangint(result.querySelectorAll('p')[0].text);
-      int homnay = sangint(result.querySelectorAll('p')[1].text);
-      int chot = sangint(result.querySelectorAll('p')[2].text);
+      if(ten == slug) {
+      int tong = sangint(a[0].text);
+      int homnay = sangint(a[1].text);
+      int chot = sangint(a[2].text);
       // int tong = 1;
       // int homnay = 1;
       // int chot = 1;
